@@ -34,8 +34,8 @@ function drawVisualization() {
     ac.draw(data, {
         title : 'Top 5 Search Terms Driving Traffic to Toyota Motor Sales',
         isStacked: true,
-        width: 600,
-        height: 400,
+        width: 400,
+        height: 250,
         vAxis: {title: "Percent of Search Terms"},
     });
 }
