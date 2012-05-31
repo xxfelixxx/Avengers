@@ -32,8 +32,8 @@ $(document).ready(function() {
 		    'imgPos': '0 113px',
 		    'imgPosHover': '0px 56px',
 		    'wwidth' : '100%',
-		    'wheight' : '150px',
-		    'url' : 'google_charts/intensity_map.html'
+		    'wheight' : '300px',
+		    'url' : 'toyota/eval/toyota_search_terms.html'
 		}
 	    }
 	};

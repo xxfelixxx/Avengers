@@ -14,8 +14,8 @@ var widgetIcon = [{
 	'imgPos': '-66px 113px',
 	'imgPosHover': '-66px 169px',
 	'width' : '100%',
-	'height' : '200px',
-	'url' : 'http://localhost'
+	'height' : '300px',
+	'url' : 'toyota/eval/toyota_search_terms.html'
     },
     'CampaignPie' : {
 	'title': 'Pie chart',
