@@ -35,8 +35,8 @@ function drawVisualization() {
     ac.draw(data, {
         title : 'Top 5 Websites : Automotive > Manufacturers',
         isStacked: true,
-        width: 600,
-        height: 400,
+        width: 400,
+        height: 250,
         vAxis: {title: "Percent of Internet Traffic"},
     });
 }
