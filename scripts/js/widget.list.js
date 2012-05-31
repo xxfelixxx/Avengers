@@ -15,7 +15,7 @@ var widgetIcon = [{
 	'imgPosHover': '-66px 169px',
 	'width' : '100%',
 	'height' : '300px',
-	'url' : 'toyota/traffics/toyota_search_terms.html'
+	'url' : 'toyota/eval/toyota_search_terms.html'
     },
     'alert' : {
 	'title': 'ALERT',
