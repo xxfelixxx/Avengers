@@ -1,57 +1,57 @@
 var widgetIcon = [{
-    'Feed' : {
-	'title': 'News Feed',
+    'eval' : {
+	'title': 'EVAL',
 	'img' : 'report_sprite.png',
 	'imgPos': '0 113px',
 	'imgPosHover': '0px 56px',
 	'width' : '100%',
 	'height' : '200px',
-	'url' : 'widgets/live.html'
+	'url' : 'toyota/eval/top_car_websites.html'
     },
-    'CampaignLine' : {
-	'title': 'Line chart',
+    'traffic' : {
+	'title': 'TRAFFIC',
 	'img' : 'report_sprite.png',
 	'imgPos': '-66px 113px',
 	'imgPosHover': '-66px 169px',
 	'width' : '100%',
 	'height' : '300px',
-	'url' : 'toyota/eval/toyota_search_terms.html'
+	'url' : 'toyota/traffic/toyota_search_terms.html'
     },
-    'CampaignPie' : {
-	'title': 'Pie chart',
+    'alert' : {
+	'title': 'ALERT',
 	'img' : 'report_sprite.png',
 	'imgPos': '-133px 113px',
 	'imgPosHover': '-133px 169px',
 	'width' : '100%',
 	'height' : '100px',
-	'url' : 'http://kode.fahmi.my'
+	'url' : 'toyota/alert/index.html'
     },
-    'CampaignBar' : {
-	'title': 'Bar chart',
+    'buzzword' : {
+	'title': 'BUZZWORD',
 	'img' : 'report_sprite.png',
 	'imgPos': '-200px 113px',
 	'imgPosHover': '-200px 169px',
 	'width' : '100%',
 	'height' : '150px',
-	'url' : 'http://kode.fahmi.my'
+	'url' : 'toyota/buzzword/index.html'
     },
-    'CampaignChange' : {
-	'title': 'This period vs last',
+    'live' : {
+	'title': 'LIVE',
 	'img' : 'report_sprite.png',
 	'imgPos': '-267px 113px',
 	'imgPosHover': '-267px 169px',
 	'width' : '100%',
 	'height' : '400px',
-	'url' : 'http://kode.fahmi.my'
+	'url' : 'toyota/live/live.html'
     },
-    'Image' : {
-	'title': 'Logo or image',
+    'report' : {
+	'title': 'REPORT',
 	'img' : 'report_sprite.png',
 	'imgPos': '-334px 113px',
 	'imgPosHover': '-334px 169px',
 	'width' : '100%',
 	'height' : '300px',
-	'url' : 'http://kode.fahmi.my'
+	'url' : 'toyota/report/index.html'
     },
     'Heading' : {
 	'title': 'Heading',
