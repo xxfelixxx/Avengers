@@ -41,7 +41,7 @@ var widgetIcon = [{
 	'imgPos': '-267px 113px',
 	'imgPosHover': '-267px 169px',
 	'width' : '100%',
-	'height' : '400px',
+	'height' : '300px',
 	'url' : 'toyota/live/live.html'
     },
     'report' : {
