@@ -1,6 +1,6 @@
 var widgetIcon = [{
     'eval' : {
-	'title': 'EVAL',
+	'title': 'Assessment',
 	'img' : 'report_sprite.png',
 	'imgPos': '0 113px',
 	'imgPosHover': '0px 56px',
@@ -9,7 +9,7 @@ var widgetIcon = [{
 	'url' : 'toyota/eval/eval.html'
     },
     'traffic' : {
-	'title': 'TRAFFIC',
+	'title': 'Traffic',
 	'img' : 'report_sprite.png',
 	'imgPos': '-66px 113px',
 	'imgPosHover': '-66px 169px',
@@ -27,7 +27,7 @@ var widgetIcon = [{
 	'url' : 'toyota/alert/index.html'
     },
     'buzzword' : {
-	'title': 'BUZZWORD',
+	'title': 'Audience',
 	'img' : 'report_sprite.png',
 	'imgPos': '-200px 113px',
 	'imgPosHover': '-200px 169px',
@@ -36,7 +36,7 @@ var widgetIcon = [{
 	'url' : 'toyota/eval/audience_overview.html'
     },
     'live' : {
-	'title': 'LIVE',
+	'title': 'Live',
 	'img' : 'report_sprite.png',
 	'imgPos': '-267px 113px',
 	'imgPosHover': '-267px 169px',
@@ -54,7 +54,7 @@ var widgetIcon = [{
 	'url' : 'toyota/report/index.html'
     },
     'Heading' : {
-	'title': 'Heading',
+	'title': 'HEADING',
 	'img' : 'report_sprite.png',
 	'imgPos': '-401px 113px',
 	'imgPosHover': '-401px 170px',
@@ -63,7 +63,7 @@ var widgetIcon = [{
 	'url' : 'http://kode.fahmi.my'
     },
     'Comment' : {
-	'title': 'Text block',
+	'title': 'TEXT BLOCK',
 	'img' : 'report_sprite.png',
 	'imgPos': '-468px 113px',
 	'imgPosHover': '-468px 170px',
@@ -72,7 +72,7 @@ var widgetIcon = [{
 	'url' : 'http://kode.fahmi.my'
     },
     'Appendix' : {
-	'title': 'List of segments',
+	'title': 'LIST OF SEGMENTS',
 	'img' : 'report_sprite.png',
 	'imgPos': '-536px 113px',
 	'imgPosHover': '-536px 170px',
@@ -81,7 +81,7 @@ var widgetIcon = [{
 	'url' : 'http://kode.fahmi.my'
     },
     'CampaignScatter' : {
-	'title': 'Scatter chart',
+	'title': 'SCATTER CHART',
 	'img' : 'report_sprite.png',
 	'imgPos': '-602px 113px',
 	'imgPosHover': '-602px 169px',
@@ -91,7 +91,7 @@ var widgetIcon = [{
     },
     'CampaignLine': {
 	'id' : '',
-	'title': 'Data by period',
+	'title': 'DATA BY PERIOD',
 	'img' : 'report_sprite.png',
 	'imgPos': '-669px 113px',
 	'imgPosHover': '-669px 169px',
