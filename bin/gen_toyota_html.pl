@@ -24,7 +24,7 @@ $cmd = 'find ' . $directory . ' | egrep html$';
 print "Generating list of existing HTML files for $directory\n";
 chomp( my @html_files = `$cmd` );
 
-
+my $defer_html = [];
 
 my $file_data = [];
 my @generated_html;
@@ -72,7 +72,8 @@ for my $file (@html_files) {
         folder => $dir || DEFAULT_FOLDER,
     };
 }
-create_js_data($file_data);
+my ($json) = create_js_data($file_data);
+map { _defer_html($_, $json); } @$defer_html;
 
 exit 0;
 
@@ -81,6 +82,15 @@ sub create_html {
     my ($fname) = $file =~ m|\/?(.+)\.js$|;
     my $html = "$fname.html";
 
+    push @$defer_html, { name => $name, file => $file, meta => $meta, html => $html };
+    return $html;
+}
+
+sub _defer_html {
+    my ($h, $json) = @_;
+
+    my ($name, $file, $meta, $html) = ($h->{name}, $h->{file}, $h->{meta}, $h->{html});
+    my (@peers) = get_peers($html, $json);
     my ($fullname, $dir) = fileparse($file);
     $file = $fullname;
     print "$file\n";
@@ -104,14 +114,38 @@ sub create_html {
       $google_load
       google.setOnLoadCallback(drawVisualization);
     </script>
+    <style>
+    body, html { margin:0; padding:0; }
+        .doselect {width:100%;height: 20px;}
+        .sel{float:right;margin: 6px 6px 0 0;}
+    </style>
   </head>
   <body>
+    <div class="doselect">
+      <div class="sel">
+       <select id="doselect" onchange="window.location.href=this.value">
+HTML
+
+   for my $option (@peers) {
+       my $html = $option->{html};
+       $html =~ s|.*/||;
+       my $title = $option->{title};
+       my $selected = $option->{selected} ? qq(selected="selected") : '';
+       print $selected . "\n";
+       print $fh qq|<option value="$html" $selected>$title</option>|."\n";
+       print qq|<option value="$html" $selected>$title</option>|."\n";
+#         <option value="top_car_websites.html">top car website</option>
+#         <option value="toyota_search_terms.html" selected="selected">toyota search terms</optio
+    }
+    print $fh <<HTML;
+       </select>
+      </div>
+    </div>
     <div id="visualization" style="width: $width; height: $height;"></div>
   </body>
 </html>
 HTML
 
-   return $html;
 }
 
 sub process_headers {
@@ -159,8 +193,28 @@ sub create_js_data {
     open my $fh, ">$out" or die $!;
     print $fh to_json($json);
     close $fh;
-    1;
+
+    return $json;
 }
+
+sub get_peers {
+    my ($html, $json) = @_;
+    for my $key (keys %$json) {
+        print $key . "\n";
+        if (grep {$_->{file} eq $html} @{$json->{$key}}) {
+            my @peers;
+            for my $f (@{$json->{$key}}) {
+                my $file = $f->{file};
+                my $title = $f->{title};
+                my $selected = $file eq $html ? 1 : 0;
+                push @peers, { html => $file, title => $title, selected => $selected };
+            }
+            print Dumper(@peers);
+            return @peers;
+        }
+    }
+}
+
 
 __END__
 
