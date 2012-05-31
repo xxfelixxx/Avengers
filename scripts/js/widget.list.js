@@ -6,7 +6,7 @@ var widgetIcon = [{
 	'imgPosHover': '0px 56px',
 	'width' : '100%',
 	'height' : '200px',
-	'url' : 'toyota/eval/top_car_websites.html'
+	'url' : 'toyota/eval/eval.html'
     },
     'traffic' : {
 	'title': 'TRAFFIC',
@@ -15,7 +15,7 @@ var widgetIcon = [{
 	'imgPosHover': '-66px 169px',
 	'width' : '100%',
 	'height' : '300px',
-	'url' : 'toyota/traffic/toyota_search_terms.html'
+	'url' : 'toyota/eval/toyota_search_terms.html'
     },
     'alert' : {
 	'title': 'ALERT',
