@@ -8,17 +8,18 @@
     </script>
     <style>
     body, html { margin:0; padding:0; }
-    .doselect {width:100%;height: 20px;}
-    .sel{float:right;margin: 6px 6px 0 0;}
+        .doselect {width:100%;height: 20px;}
+        .sel{float:right;margin: 6px 6px 0 0;}
     </style>
   </head>
   <body>
     <div class="doselect">
       <div class="sel">
-	<select id="doselect" onchange="window.location.href=this.value">
-	  <option value="top_car_websites.html">top car website</option>
-	  <option value="toyota_search_terms.html" selected="selected">toyota search terms</option>
-	</select>
+       <select id="doselect" onchange="window.location.href=this.value">
+<option value="toyota_search_terms.html" selected="selected">Top 5 Search Terms Driving Traffic to Toyota Motor Sales</option>
+<option value="top_car_websites.html" >Top 5 Sites - Auto Manufactures</option>
+<option value="demographic_by_state.html" >Toyota Sales by State</option>
+       </select>
       </div>
     </div>
     <div id="visualization" style="width: 100%; height: 500px;"></div>
