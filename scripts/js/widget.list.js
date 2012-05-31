@@ -5,7 +5,7 @@ var widgetIcon = [{
 	'imgPos': '0 113px',
 	'imgPosHover': '0px 56px',
 	'width' : '100%',
-	'height' : '200px',
+	'height' : '750px',
 	'url' : 'toyota/eval/eval.html'
     },
     'traffic' : {
